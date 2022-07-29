@@ -1,0 +1,129 @@
+/*reset*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+
+/*header*/
+.menu {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "logo menu buscador";
+  padding-top: 1.5rem;
+  background-color: #09091a; }
+  .menu .tituloSashimi {
+    grid-area: logo;
+    font-size: 25px;
+    height: 2rem;
+    color: orange;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 0.5rem; }
+  .menu .sashimiMenus {
+    grid-area: menu;
+    display: flex;
+    gap: 25%;
+    justify-content: center;
+    list-style: none; }
+    .menu .sashimiMenus .linkMenu {
+      text-decoration: none;
+      color: whitesmoke;
+      font-size: 24px; }
+
+/*header index*/
+/*main*/
+.main {
+  background-color: #d79927; }
+  .main .colorTipos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+    .main .colorTipos .linkPopulares {
+      padding-top: 1rem;
+      font-size: x-large;
+      text-decoration: none;
+      color: black; }
+    .main .colorTipos .linkGeneros {
+      font-size: x-large;
+      text-decoration: none;
+      color: black; }
+  .main .colorBanner {
+    background-color: #d79927;
+    height: 700px; }
+    .main .colorBanner .demonslayerBanner {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: 500px;
+      width: 300px;
+      bottom: -100px; }
+  .main section .favoritos {
+    background-color: #09091a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: whitesmoke; }
+  .main section .imagenesFavoritos {
+    background-color: #09091a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6";
+    justify-items: center;
+    overflow-x: auto; }
+    .main section .imagenesFavoritos .imagenesHijo {
+      margin: 30px;
+      height: 400px;
+      width: 300px; }
+    .main section .imagenesFavoritos .img1 {
+      grid-area: imagen1; }
+    .main section .imagenesFavoritos .img2 {
+      grid-area: imagen2; }
+    .main section .imagenesFavoritos .img3 {
+      grid-area: imagen3; }
+    .main section .imagenesFavoritos .img4 {
+      grid-area: imagen4; }
+    .main section .imagenesFavoritos .img5 {
+      grid-area: imagen5; }
+    .main section .imagenesFavoritos .img6 {
+      grid-area: imagen6; }
+  .main section .imagenesFavoritos::-webkit-scrollbar {
+    width: 2em; }
+  .main section .imagenesFavoritos::-webkit-scrollbar-track {
+    background: whitesmoke;
+    border-radius: 0%; }
+  .main section .imagenesFavoritos::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 100vw; }
+  .main section .imagenesFavoritos::-webkit-scrollbar-thumb:hover {
+    background: black; }
+
+/*footer*/
+.footer {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas: "redes condiciones";
+  height: 8rem;
+  background-color: #4a4646;
+  align-items: center;
+  justify-items: center; }
+  .footer .redesFooter {
+    grid-area: redes;
+    display: flex;
+    flex-direction: row;
+    gap: 0.8rem; }
+    .footer .redesFooter li {
+      list-style: none; }
+  .footer .ubicacionEnding {
+    grid-area: condiciones;
+    display: flex;
+    flex-flow: column;
+    gap: 0.8rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger; }
+    .footer .ubicacionEnding .listaColor {
+      color: whitesmoke; }
+      .footer .ubicacionEnding .listaColor a {
+        color: whitesmoke; }
