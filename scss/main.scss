@@ -1,4 +1,3 @@
-@import "base/mediaqueries";
 
 $colormainPrincipal: rgb(215, 153, 39);
 $colorSashimi: rgb(236, 161, 24);
@@ -195,6 +194,6 @@ $letrasmoke: rgb(245, 245, 245);
                 color: $letrasmoke;
             }
         }
-    }
-
+    }   
 }
+@import "base/mediaqueries";
