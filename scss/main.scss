@@ -1,3 +1,9 @@
+@import "base/mediaqueries";
+
+$colormainPrincipal: rgb(215, 153, 39);
+$colorSashimi: rgb(236, 161, 24);
+$letrasmoke: rgb(245, 245, 245);
+
 /*reset*/
 *{
     padding: 0%;
@@ -20,7 +26,7 @@
         grid-area: logo;
         font-size: 25px;
         height: 2rem;
-        color: orange;
+        color: rgb(236, 161, 24);
         font-family: 'Raleway', sans-serif;
         padding-left: 0.5rem;
     }
@@ -34,7 +40,7 @@
 
         .linkMenu{
             text-decoration: none;
-            color: whitesmoke;
+            color: $letrasmoke;
             font-size: 24px;
         }
     }
@@ -46,7 +52,7 @@
 /*main*/
 
 .main{
-    background-color: rgb(215, 153, 39);
+    background-color: $colormainPrincipal;
 
     .colorTipos{
         display: flex;
@@ -87,7 +93,7 @@
             background-color: rgb(9, 9, 26);
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-align: center;
-            color: whitesmoke;
+            color: $letrasmoke;
         }
 
         .imagenesFavoritos{
@@ -136,7 +142,7 @@
         }
         
         .imagenesFavoritos::-webkit-scrollbar-track{
-            background: whitesmoke;
+            background: $letrasmoke;
             border-radius: 0%;
         }
         
@@ -183,10 +189,10 @@
         font-size: larger;
 
         .listaColor{
-            color: whitesmoke;
+            color: $letrasmoke;
 
             a{
-                color: whitesmoke;
+                color: $letrasmoke;
             }
         }
     }
