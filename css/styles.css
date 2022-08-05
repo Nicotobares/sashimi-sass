@@ -140,3 +140,73 @@
     flex-direction: row;
     gap: 25px;
     margin-left: 35px; } }
+
+/*Noticias*/
+.mainNoticias {
+  background-image: url("../imagenes/fondonoticias.jpg"); }
+  .mainNoticias div div .imgNoticias {
+    height: 150px;
+    width: 150px; }
+  .mainNoticias div div .imgDigimon {
+    height: 150px;
+    width: 250px; }
+
+/*Login*/
+.loginFondo {
+  background-image: url("../imagenes/Sashimifondo.jpg");
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: 800px; }
+  .loginFondo .formulario {
+    background-color: whitesmoke;
+    width: 400px;
+    border-radius: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    border: solid 3px black; }
+    .loginFondo .formulario h2 {
+      background-color: orange;
+      border-radius: 10px;
+      text-align: center;
+      padding-top: 2.5rem;
+      margin-bottom: 30px; }
+    .loginFondo .formulario .username {
+      margin: 1rem;
+      font-size: large; }
+    .loginFondo .formulario .contrasena {
+      margin: 1rem;
+      font-size: large; }
+    .loginFondo .formulario .recordar {
+      margin: 1rem; }
+    .loginFondo .formulario .acceder {
+      margin: 1rem;
+      margin-bottom: 2rem; }
+
+/*Generos*/
+.mainGeneros {
+  background-image: url("../imagenes/fondogenero.jpg");
+  padding-bottom: 650px; }
+  .mainGeneros .generos {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    gap: 30px; }
+    .mainGeneros .generos .tituloGeneros {
+      font-size: x-large;
+      margin-left: 0.5rem; }
+    .mainGeneros .generos .generosItems {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-left: 4rem;
+      list-style: none;
+      font-size: larger;
+      color: black; }
+
+/*Contacto*/
+.mainContactanos {
+  background-color: orange;
+  padding-bottom: 700px; }

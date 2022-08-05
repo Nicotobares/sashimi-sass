@@ -196,4 +196,118 @@ $letrasmoke: rgb(245, 245, 245);
         }
     }   
 }
+
 @import "base/mediaqueries";
+
+/*Noticias*/
+
+.mainNoticias{
+    background-image: url("../imagenes/fondonoticias.jpg");
+
+    div{
+        div{
+            .imgNoticias{
+                height: 150px;
+                width: 150px;
+            }           
+        }
+    }
+
+    div{
+        div{
+            .imgDigimon{
+                height: 150px;
+                width: 250px;
+            }
+        }
+    }
+}
+
+/*Login*/
+
+.loginFondo{
+    background-image: url("../imagenes/Sashimifondo.jpg");
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+
+    .formulario{
+        background-color: whitesmoke;
+        width: 400px;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: large;
+        border: solid 3px black;
+
+        h2{
+            background-color: orange;
+            border-radius: 10px;
+            text-align: center;
+            padding-top: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        
+
+        .username{
+            margin: 1rem;
+            font-size: large;
+        }
+        
+        .contrasena{
+            margin: 1rem;
+            font-size: large;
+        }
+        
+        .recordar{
+            margin: 1rem;
+        }
+        
+        .acceder{
+            margin: 1rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+}
+
+/*Generos*/
+
+.mainGeneros{
+    background-image: url("../imagenes/fondogenero.jpg");
+    padding-bottom: 650px;
+
+    .generos{
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+        gap: 30px;
+
+        .tituloGeneros{
+            font-size: x-large;
+            margin-left: 0.5rem;
+        }
+
+        .generosItems{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-left: 4rem;
+            list-style: none;
+            font-size: larger;
+            color: black;
+        }
+    }
+    
+}
+
+/*Contacto*/
+
+.mainContactanos{
+    background-color: orange;
+    padding-bottom: 700px;
+}
+
