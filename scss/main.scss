@@ -1,7 +1,6 @@
-
-$colormainPrincipal: rgb(215, 153, 39);
-$colorSashimi: rgb(236, 161, 24);
-$letrasmoke: rgb(245, 245, 245);
+@import "base/listas";
+@import "base/variables";
+@import "base/mixins";
 
 /*reset*/
 *{
@@ -39,7 +38,7 @@ $letrasmoke: rgb(245, 245, 245);
 
         .linkMenu{
             text-decoration: none;
-            color: $letrasmoke;
+            color: nth($list: $colores , $n:2 );
             font-size: 24px;
         }
     }
@@ -51,7 +50,7 @@ $letrasmoke: rgb(245, 245, 245);
 /*main*/
 
 .main{
-    background-color: $colormainPrincipal;
+    background-color: nth($list: $colores, $n:1 );
 
     .colorTipos{
         display: flex;
@@ -73,7 +72,7 @@ $letrasmoke: rgb(245, 245, 245);
     }
 
     .colorBanner{
-        background-color: rgb(215, 153, 39);
+        background-color: nth($list: $colores, $n:1 );
         height: 700px;
 
         .demonslayerBanner{
@@ -92,7 +91,7 @@ $letrasmoke: rgb(245, 245, 245);
             background-color: rgb(9, 9, 26);
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             text-align: center;
-            color: $letrasmoke;
+            color: nth($list: $colores , $n:2 );
         }
 
         .imagenesFavoritos{
@@ -107,8 +106,7 @@ $letrasmoke: rgb(245, 245, 245);
 
             .imagenesHijo{
                 margin: 30px;
-                height: 400px;
-                width: 300px;
+                @include tamanoImagenes;
             }
             
             .img1{
@@ -141,7 +139,7 @@ $letrasmoke: rgb(245, 245, 245);
         }
         
         .imagenesFavoritos::-webkit-scrollbar-track{
-            background: $letrasmoke;
+            background: nth($list: $colores , $n:2 );
             border-radius: 0%;
         }
         
@@ -188,10 +186,10 @@ $letrasmoke: rgb(245, 245, 245);
         font-size: larger;
 
         .listaColor{
-            color: $letrasmoke;
+            color: nth($list: $colores , $n:2 );
 
             a{
-                color: $letrasmoke;
+                color: nth($list: $colores , $n:2 );;
             }
         }
     }   
@@ -234,7 +232,8 @@ $letrasmoke: rgb(245, 245, 245);
     height: 800px;
 
     .formulario{
-        background-color: whitesmoke;
+        background-color: nth($list: $colores , $n:2 );
+        
         width: 400px;
         border-radius: 10px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -280,7 +279,7 @@ $letrasmoke: rgb(245, 245, 245);
     padding-bottom: 650px;
 
     .generos{
-        color: whitesmoke;
+        color: nth($list: $colores , $n:2 );
         display: flex;
         flex-direction: column;
         margin-left: 0.5rem;
@@ -310,4 +309,6 @@ $letrasmoke: rgb(245, 245, 245);
     background-color: orange;
     padding-bottom: 700px;
 }
+
+
 
