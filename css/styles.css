@@ -126,7 +126,8 @@
     .footer .ubicacionEnding .listaColor {
       color: whitesmoke; }
       .footer .ubicacionEnding .listaColor a {
-        color: whitesmoke; }
+        color: whitesmoke;
+        text-decoration: none; }
 
 @media screen and (max-width: 600px) {
   .main section .imagenesFavoritos {
@@ -139,7 +140,21 @@
     display: flex;
     flex-direction: row;
     gap: 25px;
-    margin-left: 35px; } }
+    margin-left: 25px; } }
+
+@media screen and (max-width: 600px) {
+  header .menu .menuNoticias {
+    margin: 0px; }
+  main div .parrafoNoticias {
+    width: 100%; }
+  main div .imgTest {
+    width: 100%; }
+    main div .imgTest .imgNoticias {
+      width: 100%; }
+  .footerNoticias {
+    height: fit-content; }
+    .footerNoticias .ubicacionEnding {
+      margin: 0px; } }
 
 /*Noticias*/
 .mainNoticias {

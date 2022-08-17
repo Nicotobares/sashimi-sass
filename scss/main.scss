@@ -189,7 +189,8 @@
             color: nth($list: $colores , $n:2 );
 
             a{
-                color: nth($list: $colores , $n:2 );;
+                color: nth($list: $colores , $n:2 );
+                text-decoration: none;
             }
         }
     }   
