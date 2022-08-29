@@ -24,7 +24,7 @@
         grid-area: logo;
         font-size: 25px;
         height: 2rem;
-        color: rgb(236, 161, 24);
+        color: $colorSashimi;
         font-family: 'Raleway', sans-serif;
         padding-left: 0.5rem;
     }
@@ -196,8 +196,6 @@
     }   
 }
 
-@import "base/mediaqueries";
-
 /*Noticias*/
 
 .mainNoticias{
@@ -276,40 +274,84 @@
 /*Generos*/
 
 .mainGeneros{
-    background-image: url("../imagenes/fondogenero.jpg");
-    padding-bottom: 650px;
+    display: grid;
+    background-color: $colorFondos;
+    grid-template-columns: 0.4fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "genero imagenGen1 imagenGen2"
+                         "genero imagenGen3 imagenGen4";
 
-    .generos{
-        color: nth($list: $colores , $n:2 );
-        display: flex;
-        flex-direction: column;
-        margin-left: 0.5rem;
-        gap: 30px;
+    row-gap: 4rem;
+    column-gap: 4rem;
+    padding: 5%;
 
         .tituloGeneros{
             font-size: x-large;
-            margin-left: 0.5rem;
+            font-weight: 1000;
         }
 
         .generosItems{
+            grid-area: genero;
             display: flex;
             flex-direction: column;
             gap: 0.5rem;
             margin-left: 4rem;
             list-style: none;
             font-size: larger;
-            color: black;
+            justify-self: center;
+            align-self: center;
         }
-    }
+
+        .imagenesGeneros{
+            width: 100%;
+        }
+
+        .imagenGeneros1{
+            grid-area: imagenGen1;
+            
+        }
+
+        .imagenGeneros2{
+            grid-area: imagenGen2;
+            
+        }
+
+        .imagenGeneros3{
+            grid-area: imagenGen3;
+            
+        }
+
+        .imagenGeneros4{
+            grid-area: imagenGen4;
+            
+        }
+    
     
 }
+
+@import "base/mediaqueries";
 
 /*Contacto*/
 
 .mainContactanos{
-    background-color: orange;
-    padding-bottom: 700px;
+    background-color: $colorFondos;
+    padding-bottom: 300px;
+    .formulate{
+        
+        .contactanosCont{
+            font-weight: 1500;
+            padding:50px;
+
+        }
+        
+        .formularioText{
+            margin-bottom: 2rem;
+            height: 14rem;
+            width:  15rem;
+        }
+    }
 }
+
 
 
 

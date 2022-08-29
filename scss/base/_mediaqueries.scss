@@ -48,10 +48,7 @@
             .imgTest{
             
                 width: 100%;
-                .imgNoticias{
-                    width: 100%;
-                    
-                }
+        
             }
         }
 
@@ -65,5 +62,67 @@
         .ubicacionEnding{
             margin: 0px;
         }
+    }
+}
+
+@media screen and (max-width: 280px){
+}
+
+/*contacto*/
+
+@media screen and (max-width: 1450px){
+    .mainGeneros{
+        display: grid;
+        background-color: $colorFondos;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "genero"
+                             "imagenGen1"
+                             "imagenGen2" 
+                             "imagenGen3"
+                             "imagenGen4";
+    
+        row-gap: 4rem;
+        column-gap: 4rem;
+        padding: 5%;
+    
+            .tituloGeneros{
+                font-size: x-large;
+                font-weight: 1000;
+            }
+    
+            .generosItems{
+                grid-area: genero;
+                gap: 1rem;
+                display: block;
+                margin-right: auto;
+                margin-left: auto;
+
+            }
+    
+            .imagenesGeneros{
+                width: 100%;
+            }
+    
+            .imagenGeneros1{
+                grid-area: imagenGen1;
+                
+            }
+    
+            .imagenGeneros2{
+                grid-area: imagenGen2;
+                
+            }
+    
+            .imagenGeneros3{
+                grid-area: imagenGen3;
+                
+            }
+    
+            .imagenGeneros4{
+                grid-area: imagenGen4;
+                
+            }
+        
     }
 }
